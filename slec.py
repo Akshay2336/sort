@@ -5,7 +5,6 @@ def selection_sort(arr):
     for j in range(1+i , (len(arr))):
       if arr[j] < arr[min_ind]
         min_ind = j
-      arr[i] , arr[min_ind] = arr[min_ind] , arr[j]
-
-     return arr
- selection_sort(arr) 
+        arr[i] , arr[min_ind] = arr[min_ind] , arr[i]
+        print(arr)
+selection_sort(arr) 
